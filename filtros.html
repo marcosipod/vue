@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible"
+	      content="ie-edge">
+	<meta content="with=device-width, initial-scale=1"
+	      name="viewport">
+	<title>
+		Filtros</title>
+	<meta name="description"
+	      content="">
+</head>
+<main>
+	<input placeholder="Buscar juego"
+	       type="search"
+	       v-model="busqueda">
+	<ul>
+		<li v-for="juego in buscarJuego">
+			{{ juego.titulo | alReves }}
+		</li>
+	</ul>
+	<pre>{{ $data }}</pre>
+</main>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<script src="filtros.js"></script>

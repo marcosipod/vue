@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			.aparecer-enter{
+				opacity: 0;
+			}
+			.aparecer-enter-active {
+				transition: opacity 1s;
+			}
+			.aparecer-leave-to{
+				opacity: 0;
+			}
+			.aparecer-leave-active{
+				transition: opacity 1s;
+			}
+		</style>
+		<title>Transiciones</title>
+	</head>
+	<body>
+		<main>
+			<button @click = "mostrar = !mostrar">Mostarar / Ocultar</button>
+			<transition name= "aparecer">
+				<h1 v-if= "mostrar" v-text= "mensajes.transicion"></h1>
+			</transition>
+			<pre>{{ $data }}</pre>
+		</main>
+		<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+		<script src="transiciones.js"></script>
+	</body>
+</html>

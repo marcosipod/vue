@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv= "x-ua-compatible" content="ie-edge">
+		<title>Eventos Vue</title>
+		<meta name= "description" content="">
+		<meta name= "viewport" content="with=device-width, initial-scale=1">
+	
+	</head>
+	<body>
+		<main>
+			<ul>
+				<li v-for = "tarea in tareas">
+					{{ tarea }}
+				</li>
+			</ul>
+			<form v-on:submit.prevent="agregarTarea()">
+				<input type="text" placeholder="Introduce tu tarea" v-model= "nuevaTarea"  >
+				<!-- METODO VANILLA JS
+				<input type="button" value="Enviar tarea" onclick="agregarTarea()"> utilizar por separado  v-on:click="agregarTarea() o  v-on:keyup.enter = "agregarTarea -->
+				<!--METODO VUE-->
+				<input type="submit" value="Enviar tarea con" >
+			</form>
+			
+			<pre> {{ $data }}</pre>
+		</main>
+		<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+		<script src=  "eventos.js"></script>
+	</body>
+</html>

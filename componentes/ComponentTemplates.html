@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Component templates</title>
+	</head>
+	<body>
+		<main>
+			<elegir-ganador :listado = "personas" inline-template>
+				<div>
+					<h1 v-if="ganador">El Ganador es: {{ ganador }}</h1>
+					<template v-else>
+						<h1>Participantes</h1>
+						<ul>
+							<li v-for="persona in listado">{{ persona}}</li>
+						</ul>
+					</template>
+					<button @click = "elegirGanador">Elegir Ganador</button>
+				</div>
+			</elegir-ganador>
+			<pre>{{ $data }}</pre>
+		</main>
+<!--	Con template	-->
+<!--		<template type="text/template" id= "elegir-ganador-template">-->
+<!--			<div>-->
+<!--				<h1 v-if="ganador">El Ganador es: {{ ganador }}</h1>-->
+<!--				<template v-else>-->
+<!--					<h1>Participantes</h1>-->
+<!--					<ul>-->
+<!--						<li v-for="persona in listado">{{ persona}}</li>-->
+<!--					</ul>-->
+<!--				</template>-->
+<!--				<button @click = "elegirGanador">Elegir Ganador</button>-->
+<!--			</div>-->
+<!--		</template>-->
+<!--&lt;!&ndash;	Con Script	&ndash;&gt;-->
+<!--		<script type="text/template" id= "elegir-ganador-template">-->
+<!--			<div>-->
+<!--				<h1 v-if="ganador">El Ganador es: {{ ganador }}</h1>-->
+<!--				<template v-else>-->
+<!--					<h1>Participantes</h1>-->
+<!--					<ul>-->
+<!--						<li v-for="persona in listado">{{ persona}}</li>-->
+<!--					</ul>-->
+<!--				</template>-->
+<!--				<button @click = "elegirGanador">Elegir Ganador</button>-->
+<!--			</div>-->
+<!--		</script>-->
+		<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+		<script src="js/componenttemplate.js"></script>
+	</body>
+</html>
