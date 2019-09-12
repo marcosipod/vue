@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b96b69-a0f3-48e9-a64b-d7a6a5fe6585" name="Default Changelist" comment="" />
+    <list default="true" id="c2b96b69-a0f3-48e9-a64b-d7a6a5fe6585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/ComponentProperties.html" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/ComponentProperties.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componentes/js/componentproperties.js" beforeDir="false" afterPath="$PROJECT_DIR$/componentes/js/componentproperties.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +65,23 @@
       <workItem from="1568210053955" duration="14802000" />
       <workItem from="1568227503631" duration="3725000" />
       <workItem from="1568295639330" duration="7792000" />
+      <workItem from="1568310058028" duration="3017000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
